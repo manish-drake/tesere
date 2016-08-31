@@ -9,7 +9,6 @@ app.use(function(req, res, next) {
 
 
 
-
 app.get('/run_test_get', function (req, res) {
 
     response = {
@@ -37,8 +36,8 @@ app.get('/run_test_get', function (req, res) {
             feedbackCode:'7(Score 32)',
             freq:'978.1 MHz',
             power:'-55.0 dB',
-            gps:Sync,
-            rfLinkTest:PASS
+            gps:'Sync',
+            rfLinkTest:'PASS'
         },
 		uatOutStateVectorTestGround:{
             address: 1001,
@@ -57,8 +56,8 @@ app.get('/run_test_get', function (req, res) {
 			feedbackCode:'7(Score 32)',
 			freq:'978.1 MHz',
             power:'-55.0 dB',
-            gps:Sync,
-            rfLinkTest:PASS
+            gps:'Sync',
+            rfLinkTest:'PASS'
         },
 		uatOutAUXStateVectorTest:{
             address: 1001,
@@ -68,8 +67,8 @@ app.get('/run_test_get', function (req, res) {
 			altitudeType: 0,
 			freq:'978.1 MHz',
             power:'-55.0 dB',
-            gps:Sync,
-            rfLinkTest:PASS
+            gps:'Sync',
+            rfLinkTest:'PASS'
         },
 		uatOutModeStatusTest:{
             address: 1001,
@@ -95,8 +94,8 @@ app.get('/run_test_get', function (req, res) {
 			fbCode:'(0)',
 			freq:'978.1 MHz',
             power:'-55.0 dB',
-            gps:Sync,
-            rfLinkTest:PASS
+            gps:'Sync',
+            rfLinkTest:'PASS'
         },
 		uatOutTargetStateTest:{
             address: 1001,
@@ -114,8 +113,8 @@ app.get('/run_test_get', function (req, res) {
 			lnavMode:'Engaged (1)',
 			freq:'978.1 MHz',
             power:'-55.0 dB',
-            gps:Sync,
-            rfLinkTest:PASS
+            gps:'Sync',
+            rfLinkTest:'PASS'
         },
 		uatOutTrajectoryChangeTest:{
             address: 1001,
@@ -124,8 +123,8 @@ app.get('/run_test_get', function (req, res) {
 			tcField: 00000000000000000,
 			freq:'978.1 MHz',
             power:'-55.0 dB',
-            gps:Sync,
-            rfLinkTest:PASS
+            gps:'Sync',
+            rfLinkTest:'PASS'
         },
 		uatOutDetailRFLinkTest:{
             address: 1001,
@@ -145,8 +144,8 @@ app.get('/run_test_get', function (req, res) {
 			eyeOpenningVerB:'95.2%',
 			eyeOpenningHorA:'0.74 usec',
 			eyeOpenningHorB:'77.1%',
-			gps:Sync,
-			rfLinkTest:PASS
+			gps:'Sync',
+			rfLinkTest:'PASS'
         },
 		uatOutDetailSummary:{
             address: 1001,
@@ -177,8 +176,8 @@ app.get('/run_test_get', function (req, res) {
 			fbCode:'(0)',
 			freq:'978.1 MHz',
             power:'-55.0 dB',
-            gps:Sync,
-            rfLinkTest:PASS
+            gps:'Sync',
+            rfLinkTest:'PASS'
         },
         testParameter: {
             mode: 0,
@@ -292,6 +291,6 @@ var server = app.listen(8081, function () {
     var host = server.address().address
     var port = server.address().port
 
-    console.log("Test Set server listening at http://%s:%s", host, port)
+    console.log("Example app listening at http://%s:%s", host, port)
 
 })
