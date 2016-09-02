@@ -23,7 +23,7 @@ app.get('/run_test_get', function (req, res) {
                 distance: 1
             }
     }
-    switch (req.q.msgID) {
+    switch (req.query.msgID) {
         case 'uatStateVectorTestSubsonic':
             response.data = {
                 addressType: 0,
