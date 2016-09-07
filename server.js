@@ -1,6 +1,12 @@
+/**@requires express */
 var express = require('express');
 var app = express();
-
+/**
+ * The use function to allow access to the server from JS Client
+ * @param  {Request} req Web request received from client
+ * @param  {Response} res Web response to be sent back to client
+ * @param  {any} next
+ */
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -96,7 +102,7 @@ app.get('/run_test_get', function (req, res) {
                 nacV: '<3 m/s (2)',
                 nicBaroCode: '(0)',
                 uatIn: 'Yes (1)',
-                '1090esIn': 'No (0)',
+                _1090esIn: 'No (0)',
                 tcas: 'No (0)',
                 tcasRA: 'No (0)',
                 ident: 'Not Active (0)',
@@ -186,7 +192,7 @@ app.get('/run_test_get', function (req, res) {
                 nacV: '(2)',
                 nicBaro: '(0)',
                 uatIn: '(1)',
-                '1090esIn': '(0)',
+                _1090esIn: '(0)',
                 tcas: '(0)',
                 tcasRA: '(0)',
                 ident: '(0)',
